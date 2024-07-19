@@ -292,12 +292,15 @@ class Controller{
     static getStorageSizeData(type) {
         fetch(config.url + type).then(response => response.json()).then(data => {
             const storageSizeOp = document.querySelector(config.storage.size);
-            let storageModelData = Controller.getStorageModel(data);            let storageSizeList = Controller.getStorageSizeList(storageModelData);
+            let storageModelData = Controller.getStorageModel(data);            
+            let storageSizeList = Controller.getStorageSizeList(storageModelData);
             Controller.addOptionList(storageSizeList, storageSizeOp);
         });
     }
 
-    static getStorageSizeList(storageModelData) {        let storageModelList = Object.keys(storageModelData);        let tbList = [];
+    static getStorageSizeList(storageModelData) {        
+        let storageModelList = Object.keys(storageModelData);        
+        let tbList = [];
         let gbList = [];
 
         storageModelList.forEach(model => {
