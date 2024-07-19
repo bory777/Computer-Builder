@@ -1,0 +1,104 @@
+
+<!-- ここからHTMLを記述してください。 -->
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <title>Build Your Own PC</title>
+    </head>
+    <body>
+        <div class="header__title bg-secondary py-1 d-flex justify-content-center align-items-center col-12">
+            <h1 class="text-white m-0">Build Your Own Computer</h1>
+        </div>
+        <div class="ml-1">
+            <div class="step my-4">
+                <div class="step__title">
+                    <h4>step1: Select Your CPU</h4>
+                </div>
+                <div class="d-flex my-3 flex-column flex-sm-row">
+                    <h5>Brand</h5>
+                    <select class="custom-select mx-3 col-9 col-sm-3" id="cpuBrand">
+                        <option selected>-</option>
+                    </select>
+                    <h5>Model</h5>
+                    <select class="custom-select mx-3 col-9 col-sm-3" id="cpuModel">
+                        <option selected>-</option>
+                    </select>
+                </div>
+            </div>
+            <div class="step my-4">
+                <div class="step__title">
+                    <h4>step2: Select Your GPU</h4>
+                </div>
+                <div class="d-flex my-3 flex-column flex-sm-row">
+                    <h5>Brand</h5>
+                    <select class="custom-select mx-3 col-9 col-sm-3" id="gpuBrand">
+                        <option selected>-</option>
+                    </select>
+                    <h5>Model</h5>
+                    <select class="custom-select mx-3 col-9 col-sm-3" id="gpuModel">
+                        <option selected>-</option>
+                    </select>
+                </div>
+            </div>
+            <div class="step my-4">
+                <div class="step__title">
+                    <h4>step3: Select Your Memory Card</h4>
+                </div>
+                <div class="d-flex my-3 flex-column flex-sm-row">
+                    <h5>How many?</h5>
+                    <select class="custom-select mx-3 col-9 col-sm-1" id="ramNum">
+                        <option selected>-</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                    <h5>Brand</h5>
+                    <select class="custom-select mx-3 col-9 col-sm-3" id="ramBrand">
+                        <option selected>-</option>
+                    </select>
+                    <h5>Model</h5>
+                    <select class="custom-select mx-3 col-9 col-sm-3" id="ramModel">
+                        <option selected>-</option>
+                    </select>
+                </div>
+            </div>
+            <div class="step my-4">
+                <div class="step__title">
+                    <h4>step4: Select Your Storage</h4>
+                </div>
+                <div class="d-flex my-3 flex-column flex-sm-row">
+                    <h5>HDD or SSD</h5>
+                    <select class="custom-select mx-3 col-9 col-sm-2" id="storageType">
+                        <option selected>-</option>
+                        <option>HDD</option>
+                        <option>SSD</option>
+                    </select>
+                    <h5>Storage</h5>
+                    <select class="custom-select mx-3 col-9 col-sm-2" id="storageSize">
+                        <option selected>-</option>
+                    </select>
+                    <h5>Brand</h5>
+                    <select class="custom-select mx-3 col-9 col-sm-2" id="storageBrand">
+                        <option selected>-</option>
+                    </select>
+                    <h5>Model</h5>
+                    <select class="custom-select mx-3 col-9 col-sm-2" id="storageModel">
+                        <option selected>-</option>
+                    </select>
+                </div>
+            </div>
+            <div class="submit">
+                <button type="button" class="btn btn-primary mb-4" id="addPC">Add PC</button>
+            </div>
+            <div class="bg-info" id="result">
+                
+            </div>
+        </div>
+        <script src="./test.js"></script>
+    </body>
+</html>
